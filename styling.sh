@@ -9,19 +9,23 @@ echo "${A7Y}██╔══██║██║╚════╝██╔══�
 echo "${A7Y}██║  ██║███████╗ ██║  ██║███████╗██║  ██║██║ ╚═╝ ██║   ██║";
 echo "${A7Y}╚═╝  ╚═╝╚══════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝   ╚═╝";
 echo
-printf "[                    ] 0% "
-time.sleep(5)
-printf "[=====               ] 25%"
-time.sleep(5)
-printf "[==========          ] 50%"
-time.sleep(5)
-printf "[===============     ] 75%"
-time.sleep(5)
-printf "[====================] 100%"
-time.sleep(3)
+printf "Please wait..[                    ] 0% "
+sleep 0.4
+clear
+printf "Please wait..[=====               ] 25%"
+sleep 0.4
+clear
+printf "Please wait..[==========          ] 50%"
+sleep 0.4
+clear
+printf "Please wait..[===============     ] 75%"
+sleep 0.4
+clear
+printf "Please wait..[====================] 100%"
+sleep 0.4
+clear
 A7Y = 0
 termux-setup-storage
-
 apt update
 apt install -y git zsh
 git clone https://github.com/Cabbagec/termux-ohmyzsh.git "$HOME/termux-ohmyzsh" --depth 1
